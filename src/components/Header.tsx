@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import Button from "./Button";
 import github from "@/assets/svg/github.svg";
 import mentiontab from "@/assets/svg/MENTIONTAB.svg";
+import twitter from "@/assets/svg/twitter.svg";
 import logo from "@/assets/png/logo.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -55,10 +56,16 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="col-start-3 hidden w-full justify-end gap-5 lg:flex items-center">
+          <div className="col-start-3 hidden w-full justify-end gap-1 lg:flex items-center">
+            <a
+              href="https://x.com/mileswangs"
+              className="hover:bg-gray-200 rounded-md px-2 py-1 transition-all duration-300"
+            >
+              <Image src={twitter} alt="x" className="size-7" />
+            </a>
             <a
               href="https://github.com/mileswangs/mentiontab"
-              className="hover:bg-gray-200 rounded-md px-2 py-1 transition-all duration-300"
+              className="hover:bg-gray-200 rounded-md px-2 mr-2 py-1 transition-all duration-300"
             >
               <Image src={github} alt="github" className="size-7" />
             </a>
