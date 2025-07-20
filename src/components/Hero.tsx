@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import heroBg from "@/assets/gradient-hero-prerender.avif";
 import Image from "next/image";
 import Button from "./Button";
+import { extentionUrl } from "@/lib/constant";
 
 export default function Hero() {
   return (
@@ -27,7 +28,9 @@ export default function Hero() {
           privacy-first.
         </p>
         <div className="flex gap-4 mt-4">
-          <Button>Try it now</Button>
+          <a href={extentionUrl} download>
+            <Button>Try it now</Button>
+          </a>
           <Button
             variant="light"
             onClick={() => {

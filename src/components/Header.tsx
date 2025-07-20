@@ -15,6 +15,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { extentionUrl } from "@/lib/constant";
 
 const Header = () => {
   const [highlight, setHighlight] = useState(false);
@@ -60,7 +61,9 @@ const Header = () => {
             >
               <Image src={github} alt="github" className="size-7" />
             </a>
-            <Button className="py-2.5">try it now</Button>
+            <a href={extentionUrl} download>
+              <Button className="py-2.5">try it now</Button>
+            </a>
           </div>
 
           <div className="md:hidden relative">
