@@ -86,6 +86,9 @@ const Header = () => {
                 <DropdownMenuItem>
                   <a href="https://github.com/mileswangs/mentiontab">GitHub</a>
                 </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <a href="https://x.com/mileswangs">twitter</a>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
