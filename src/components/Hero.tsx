@@ -4,6 +4,7 @@ import heroBg from "@/assets/gradient-hero-prerender.avif";
 import Image from "next/image";
 import Button from "./Button";
 import { extentionUrl } from "@/lib/constant";
+import TryNow from "./TryNow";
 
 export default function Hero() {
   return (
@@ -28,9 +29,9 @@ export default function Hero() {
           privacy-first.
         </p>
         <div className="flex gap-4 mt-4">
-          <a href={extentionUrl} download>
-            <Button>Try it now</Button>
-          </a>
+          <TryNow extentionUrl={extentionUrl}>
+            <Button>try it now</Button>
+          </TryNow>
           <Button
             variant="light"
             onClick={() => {
