@@ -56,7 +56,7 @@ const Header = () => {
           </ul>
           <div className="col-start-3 hidden w-full justify-end gap-5 lg:flex items-center">
             <a
-              href="https://github.com/Wsgamer7/mentiontab"
+              href="https://github.com/mileswangs/mentiontab"
               className="hover:bg-gray-200 rounded-md px-2 py-1 transition-all duration-300"
             >
               <Image src={github} alt="github" className="size-7" />
@@ -76,7 +76,7 @@ const Header = () => {
                   <a href="#examples">Examples</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <a href="https://github.com/Wsgamer7/mentiontab">GitHub</a>
+                  <a href="https://github.com/mileswangs/mentiontab">GitHub</a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
