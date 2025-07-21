@@ -24,9 +24,12 @@ export default function TryNow({
   return (
     <Dialog open={openDialog} onOpenChange={setOpenDialog}>
       <DialogTrigger asChild className="">
-        <a href={extentionUrl} download>
-          {children}
-        </a>
+        <div>
+          <a href={extentionUrl} download className="hidden md:block">
+            {children}
+          </a>
+          <div className="md:hidden">{children}</div>
+        </div>
       </DialogTrigger>
       <DialogContent className="">
         <StepGuide close={() => setOpenDialog(false)} />
@@ -70,7 +73,9 @@ function StepGuide({ close }: { close?: () => void }) {
   return (
     <div className="w-full  mx-auto p-6 rounded-xl text-center ">
       {/* 标题 */}
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-4">
+        How to install mentiontab (Early Access)
+      </h2>
 
       {/* 步骤导航 */}
       <div className="flex justify-center items-center gap-2 mb-6 text-sm font-medium">
