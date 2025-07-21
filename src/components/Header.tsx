@@ -74,10 +74,10 @@ const Header = () => {
             </TryNow>
           </div>
 
-          <div className="md:hidden relative">
+          <div className="md:hidden relative top-1">
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <Image src={hamburger} alt="hamburger" className="size-7" />
+                <Image src={hamburger} alt="hamburger" className="size-7 " />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-white">
                 <DropdownMenuItem>

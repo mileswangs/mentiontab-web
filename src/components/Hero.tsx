@@ -20,7 +20,7 @@ export default function Hero() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="relative z-50 flex flex-col gap-4 md:max-w-[40%]">
-        <h1 className="text-[5rem] text-white font-semibold leading-none -tracking-4 text-balance ">
+        <h1 className="text-[3rem] md:text-[5rem] text-white font-semibold leading-none -tracking-4 text-balance ">
           Let ChatGPT see your tabs
         </h1>
         <p className="text-lg text-white font-medium leading-tight text-balance">
